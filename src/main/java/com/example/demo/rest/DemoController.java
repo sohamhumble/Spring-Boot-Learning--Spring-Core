@@ -1,6 +1,6 @@
 package com.example.demo.rest;
 
-import com.example.utils.Coach;
+import com.example.demo.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,7 +10,7 @@ public class DemoController {
     private Coach myCoach;
 
     @Autowired
-    public DemoController(Coach theCoach){
+    public void setCoach(Coach theCoach){
         myCoach=theCoach;
     }
 
