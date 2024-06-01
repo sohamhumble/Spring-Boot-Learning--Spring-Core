@@ -5,7 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.time.LocalDateTime;
 
-@SpringBootApplication
+@SpringBootApplication(
+		scanBasePackages = {"com.example.demo","com.example.utils"}
+)
 public class DemoApplication {
 
 	public static void main(String[] args) {
