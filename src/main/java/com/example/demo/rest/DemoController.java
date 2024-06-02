@@ -12,7 +12,7 @@ public class DemoController {
     private Coach myCoach;
 
     @Autowired
-    public DemoController(@Qualifier("cricketCoach") Coach theCoach) {
+    public DemoController(@Qualifier("swimmingcoach") Coach theCoach) {
         System.out.println(getClass().getSimpleName());
         myCoach = theCoach;
     }
